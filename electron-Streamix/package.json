@@ -1,0 +1,40 @@
+{
+  "name": "electron-streamix",
+  "projectName": "Streamix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "react-scripts": "4.0.3",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "electron .",
+    "electron-dev": "concurrently \"npm:start\" \"npm:electron\""
+  },
+  "build": {
+    "appId": "com.Streamix.electron",
+    "productName": "Streamix",
+    "files": [
+      "build/**/*",
+      "index.js",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "keywords": [
+    "Elber Pedro, Edgar Cardoso, Luis Gomes"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.1.0"
+  },
+  "dependencies": {
+    "electron-is-dev": "^3.0.1",
+    "react-scripts": "^5.0.1"
+  }
+}
